@@ -1,0 +1,10 @@
+debug/homepage.o
+debug/main.o
+debug/registeration.o
+debug/reservation.o
+debug/salamtak.o
+debug/qrc_resources.o
+debug/moc_homepage.o
+debug/moc_registeration.o
+debug/moc_reservation.o
+debug/moc_salamtak.o

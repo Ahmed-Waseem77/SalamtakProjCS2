@@ -8,6 +8,7 @@ Salamtak::Salamtak(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Salamtak)
 {
+
     ui->setupUi(this);
     ui->ErrorPass->setStyleSheet("QLabel{ color: red;}");
     ui->ErrorUser->setStyleSheet("QLabel{ color: red;}");
