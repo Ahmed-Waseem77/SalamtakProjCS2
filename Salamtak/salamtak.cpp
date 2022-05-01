@@ -25,6 +25,7 @@ void Salamtak::on_LoginButton_clicked()
 {
     hide();
     Homepage* r = new Homepage();
+    r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
     r->show();
 
 
@@ -36,6 +37,7 @@ void Salamtak::on_RegisterButton_clicked()
 
     hide();
     Registeration* r = new Registeration();
+    r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
     r->show();
 
 

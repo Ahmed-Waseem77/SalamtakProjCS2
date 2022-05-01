@@ -1,10 +1,14 @@
 release/homepage.o
 release/main.o
+release/payment.o
 release/registeration.o
 release/reservation.o
 release/salamtak.o
+release/userprofile.o
 release/qrc_resources.o
 release/moc_homepage.o
+release/moc_payment.o
 release/moc_registeration.o
 release/moc_reservation.o
 release/moc_salamtak.o
+release/moc_userprofile.o

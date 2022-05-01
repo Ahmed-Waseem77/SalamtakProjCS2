@@ -12,12 +12,13 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -26,21 +27,35 @@ class Ui_Homepage
 {
 public:
     QWidget *centralwidget;
-    QPushButton *pushButton_6;
-    QPushButton *pushButton_5;
-    QPushButton *pushButton_7;
-    QPushButton *pushButton_4;
-    QWidget *verticalLayoutWidget;
-    QVBoxLayout *verticalLayout;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_9;
-    QLabel *label_4;
-    QWidget *gridLayoutWidget;
+    QGridLayout *gridLayout_4;
+    QSpacerItem *horizontalSpacer_4;
+    QSpacerItem *horizontalSpacer_5;
+    QSpacerItem *verticalSpacer_7;
+    QSpacerItem *verticalSpacer_5;
+    QWidget *widget;
+    QGridLayout *gridLayout_3;
     QGridLayout *gridLayout;
-    QLabel *label;
     QLabel *label_3;
+    QSpacerItem *horizontalSpacer;
     QLabel *label_2;
+    QPushButton *pushButton_5;
+    QPushButton *pushButton_4;
+    QLabel *label;
+    QSpacerItem *verticalSpacer_3;
+    QGridLayout *gridLayout_5;
+    QPushButton *pushButton_9;
+    QPushButton *pushButton_6;
+    QPushButton *ReserveRoomButton;
+    QPushButton *pushButton_2;
+    QLabel *label_4;
+    QSpacerItem *horizontalSpacer_6;
+    QSpacerItem *verticalSpacer_6;
+    QSpacerItem *verticalSpacer_4;
+    QSpacerItem *verticalSpacer;
+    QHBoxLayout *horizontalLayout;
+    QSpacerItem *horizontalSpacer_7;
+    QPushButton *pushButton_7;
+    QPushButton *pushButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -48,94 +63,174 @@ public:
     {
         if (Homepage->objectName().isEmpty())
             Homepage->setObjectName(QString::fromUtf8("Homepage"));
-        Homepage->resize(800, 600);
+        Homepage->resize(844, 498);
         Homepage->setCursor(QCursor(Qt::ArrowCursor));
+        Homepage->setIconSize(QSize(48, 48));
         centralwidget = new QWidget(Homepage);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        pushButton_6 = new QPushButton(centralwidget);
-        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
-        pushButton_6->setGeometry(QRect(10, 290, 161, 24));
-        pushButton_6->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_6->setFlat(false);
-        pushButton_5 = new QPushButton(centralwidget);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setGeometry(QRect(710, 10, 86, 24));
+        gridLayout_4 = new QGridLayout(centralwidget);
+        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_4->addItem(horizontalSpacer_4, 9, 2, 1, 1);
+
+        horizontalSpacer_5 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_4->addItem(horizontalSpacer_5, 9, 3, 1, 1);
+
+        verticalSpacer_7 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_4->addItem(verticalSpacer_7, 8, 6, 1, 1);
+
+        verticalSpacer_5 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_4->addItem(verticalSpacer_5, 6, 6, 1, 1);
+
+        widget = new QWidget(centralwidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setStyleSheet(QString::fromUtf8("QWidget {background-color:rgb(66, 57, 57); color:rgb(255, 255, 255);\n"
+"}\n"
+""));
+        gridLayout_3 = new QGridLayout(widget);
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        gridLayout = new QGridLayout();
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        label_3 = new QLabel(widget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
         QFont font;
         font.setBold(true);
+        label_3->setFont(font);
+
+        gridLayout->addWidget(label_3, 0, 1, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer, 0, 3, 1, 1);
+
+        label_2 = new QLabel(widget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setFont(font);
+
+        gridLayout->addWidget(label_2, 0, 0, 1, 1);
+
+        pushButton_5 = new QPushButton(widget);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
         pushButton_5->setFont(font);
         pushButton_5->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_5->setStyleSheet(QString::fromUtf8("QPushButton {color: white; border-radius: 6px;min-width: 80px;}"));
         pushButton_5->setFlat(true);
-        pushButton_7 = new QPushButton(centralwidget);
-        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
-        pushButton_7->setGeometry(QRect(620, 520, 80, 24));
-        pushButton_7->setFont(font);
-        pushButton_7->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_7->setFlat(true);
-        pushButton_4 = new QPushButton(centralwidget);
+
+        gridLayout->addWidget(pushButton_5, 0, 5, 1, 1);
+
+        pushButton_4 = new QPushButton(widget);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setGeometry(QRect(620, 10, 80, 24));
         pushButton_4->setFont(font);
         pushButton_4->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_4->setStyleSheet(QString::fromUtf8("QPushButton {color: white; border-radius: 6px;min-width: 80px;}"));
         pushButton_4->setFlat(true);
-        verticalLayoutWidget = new QWidget(centralwidget);
-        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(10, 140, 160, 86));
-        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        pushButton = new QPushButton(verticalLayoutWidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton->setFlat(false);
 
-        verticalLayout->addWidget(pushButton);
+        gridLayout->addWidget(pushButton_4, 0, 4, 1, 1);
 
-        pushButton_2 = new QPushButton(verticalLayoutWidget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_2->setFlat(false);
+        label = new QLabel(widget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setFont(font);
 
-        verticalLayout->addWidget(pushButton_2);
+        gridLayout->addWidget(label, 0, 2, 1, 1);
 
-        pushButton_9 = new QPushButton(verticalLayoutWidget);
+
+        gridLayout_3->addLayout(gridLayout, 0, 0, 1, 1);
+
+
+        gridLayout_4->addWidget(widget, 0, 0, 1, 7);
+
+        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_4->addItem(verticalSpacer_3, 9, 1, 1, 1);
+
+        gridLayout_5 = new QGridLayout();
+        gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
+        pushButton_9 = new QPushButton(centralwidget);
         pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
         pushButton_9->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton_9->setFlat(false);
 
-        verticalLayout->addWidget(pushButton_9);
+        gridLayout_5->addWidget(pushButton_9, 2, 0, 1, 1);
+
+        pushButton_6 = new QPushButton(centralwidget);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_6->setFlat(false);
+
+        gridLayout_5->addWidget(pushButton_6, 3, 0, 1, 1);
+
+        ReserveRoomButton = new QPushButton(centralwidget);
+        ReserveRoomButton->setObjectName(QString::fromUtf8("ReserveRoomButton"));
+        ReserveRoomButton->setCursor(QCursor(Qt::PointingHandCursor));
+        ReserveRoomButton->setFlat(false);
+
+        gridLayout_5->addWidget(ReserveRoomButton, 0, 0, 1, 1);
+
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_2->setFlat(false);
+
+        gridLayout_5->addWidget(pushButton_2, 1, 0, 1, 1);
+
+
+        gridLayout_4->addLayout(gridLayout_5, 3, 1, 1, 2);
 
         label_4 = new QLabel(centralwidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(10, 110, 291, 21));
         QFont font1;
         font1.setPointSize(14);
         font1.setBold(true);
         label_4->setFont(font1);
-        gridLayoutWidget = new QWidget(centralwidget);
-        gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(10, 10, 321, 31));
-        gridLayout = new QGridLayout(gridLayoutWidget);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        gridLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(gridLayoutWidget);
-        label->setObjectName(QString::fromUtf8("label"));
 
-        gridLayout->addWidget(label, 0, 2, 1, 1);
+        gridLayout_4->addWidget(label_4, 2, 1, 1, 2);
 
-        label_3 = new QLabel(gridLayoutWidget);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
+        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        gridLayout->addWidget(label_3, 0, 1, 1, 1);
+        gridLayout_4->addItem(horizontalSpacer_6, 9, 4, 1, 1);
 
-        label_2 = new QLabel(gridLayoutWidget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        verticalSpacer_6 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout->addWidget(label_2, 0, 0, 1, 1);
+        gridLayout_4->addItem(verticalSpacer_6, 7, 6, 1, 1);
+
+        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_4->addItem(verticalSpacer_4, 5, 6, 1, 1);
+
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_4->addItem(verticalSpacer, 1, 1, 1, 1);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_7);
+
+        pushButton_7 = new QPushButton(centralwidget);
+        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
+        pushButton_7->setFont(font);
+        pushButton_7->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_7->setFlat(true);
+
+        horizontalLayout->addWidget(pushButton_7);
+
+
+        gridLayout_4->addLayout(horizontalLayout, 9, 6, 1, 1);
+
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+
+        gridLayout_4->addWidget(pushButton, 6, 1, 1, 2);
 
         Homepage->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Homepage);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menubar->setGeometry(QRect(0, 0, 844, 21));
         Homepage->setMenuBar(menubar);
         statusbar = new QStatusBar(Homepage);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -153,17 +248,18 @@ public:
     void retranslateUi(QMainWindow *Homepage)
     {
         Homepage->setWindowTitle(QCoreApplication::translate("Homepage", "MainWindow", nullptr));
-        pushButton_6->setText(QCoreApplication::translate("Homepage", "View reservations", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("Homepage", "Log out", nullptr));
-        pushButton_7->setText(QCoreApplication::translate("Homepage", "Contact us", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("Homepage", "My Account", nullptr));
-        pushButton->setText(QCoreApplication::translate("Homepage", "Reserve room", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Homepage", "Reserve clinic appointment", nullptr));
-        pushButton_9->setText(QCoreApplication::translate("Homepage", "Reserve Lab", nullptr));
-        label_4->setText(QCoreApplication::translate("Homepage", "Reservations", nullptr));
-        label->setText(QCoreApplication::translate("Homepage", "Balance: ", nullptr));
         label_3->setText(QCoreApplication::translate("Homepage", "Last name", nullptr));
         label_2->setText(QCoreApplication::translate("Homepage", "First name", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("Homepage", "Log out", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("Homepage", "My Account", nullptr));
+        label->setText(QCoreApplication::translate("Homepage", "Balance: ", nullptr));
+        pushButton_9->setText(QCoreApplication::translate("Homepage", "Reserve Lab", nullptr));
+        pushButton_6->setText(QCoreApplication::translate("Homepage", "View reservations", nullptr));
+        ReserveRoomButton->setText(QCoreApplication::translate("Homepage", "Reserve room", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Homepage", "Reserve clinic appointment", nullptr));
+        label_4->setText(QCoreApplication::translate("Homepage", "Reservations", nullptr));
+        pushButton_7->setText(QCoreApplication::translate("Homepage", "Contact us", nullptr));
+        pushButton->setText(QCoreApplication::translate("Homepage", "Pay for assigned Medicine", nullptr));
     } // retranslateUi
 
 };

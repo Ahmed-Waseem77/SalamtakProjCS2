@@ -11,21 +11,27 @@ CONFIG += c++11
 SOURCES += \
     homepage.cpp \
     main.cpp \
+    payment.cpp \
     registeration.cpp \
     reservation.cpp \
-    salamtak.cpp
+    salamtak.cpp \
+    userprofile.cpp
 
 HEADERS += \
     homepage.h \
+    payment.h \
     registeration.h \
     reservation.h \
-    salamtak.h
+    salamtak.h \
+    userprofile.h
 
 FORMS += \
     homepage.ui \
+    payment.ui \
     registeration.ui \
     reservation.ui \
-    salamtak.ui
+    salamtak.ui \
+    userprofile.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -35,4 +41,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 TARGET = Salamtak
 TEMPLATE = app
 QT += widgets
+QT += sql
 RESOURCES += resources.qrc

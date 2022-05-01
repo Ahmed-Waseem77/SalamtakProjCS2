@@ -155,8 +155,8 @@
    <widget class="QPushButton" name="EmergencyButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
+      <x>310</x>
+      <y>360</y>
       <width>135</width>
       <height>24</height>
      </rect>

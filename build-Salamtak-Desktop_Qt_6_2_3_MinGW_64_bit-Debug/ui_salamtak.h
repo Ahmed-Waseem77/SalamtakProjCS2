@@ -133,7 +133,7 @@ public:
         label->setFont(font1);
         EmergencyButton = new QPushButton(centralwidget);
         EmergencyButton->setObjectName(QString::fromUtf8("EmergencyButton"));
-        EmergencyButton->setGeometry(QRect(10, 10, 135, 24));
+        EmergencyButton->setGeometry(QRect(310, 360, 135, 24));
         QFont font2;
         font2.setPointSize(8);
         font2.setBold(true);
