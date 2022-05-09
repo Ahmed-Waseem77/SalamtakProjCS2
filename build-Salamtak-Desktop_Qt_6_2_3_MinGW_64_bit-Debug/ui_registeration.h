@@ -83,7 +83,7 @@ public:
         label->setGeometry(QRect(210, 10, 49, 16));
         gridLayoutWidget = new QWidget(centralwidget);
         gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(210, 40, 428, 487));
+        gridLayoutWidget->setGeometry(QRect(210, 40, 471, 547));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
@@ -270,7 +270,7 @@ public:
         Registeration->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Registeration);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1176, 21));
+        menubar->setGeometry(QRect(0, 0, 1176, 25));
         Registeration->setMenuBar(menubar);
         statusbar = new QStatusBar(Registeration);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));

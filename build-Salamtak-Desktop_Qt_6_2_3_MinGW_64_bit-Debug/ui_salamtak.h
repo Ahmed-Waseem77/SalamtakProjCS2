@@ -142,7 +142,7 @@ public:
         Salamtak->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Salamtak);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menubar->setGeometry(QRect(0, 0, 800, 25));
         Salamtak->setMenuBar(menubar);
         statusbar = new QStatusBar(Salamtak);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));

@@ -230,7 +230,7 @@ public:
         Homepage->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Homepage);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 844, 21));
+        menubar->setGeometry(QRect(0, 0, 844, 25));
         Homepage->setMenuBar(menubar);
         statusbar = new QStatusBar(Homepage);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));

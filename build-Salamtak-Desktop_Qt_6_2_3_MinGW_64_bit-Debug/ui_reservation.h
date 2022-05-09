@@ -207,7 +207,7 @@ public:
         Reservation->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Reservation);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 822, 21));
+        menubar->setGeometry(QRect(0, 0, 822, 25));
         Reservation->setMenuBar(menubar);
         statusbar = new QStatusBar(Reservation);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
