@@ -148,13 +148,13 @@ public:
         label_7->setGeometry(QRect(30, 130, 261, 20));
         details3 = new QLabel(centralwidget);
         details3->setObjectName(QString::fromUtf8("details3"));
-        details3->setGeometry(QRect(30, 270, 241, 20));
+        details3->setGeometry(QRect(30, 160, 241, 20));
         label_11 = new QLabel(centralwidget);
         label_11->setObjectName(QString::fromUtf8("label_11"));
-        label_11->setGeometry(QRect(30, 300, 241, 20));
+        label_11->setGeometry(QRect(30, 190, 241, 20));
         label_12 = new QLabel(centralwidget);
         label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setGeometry(QRect(30, 330, 241, 20));
+        label_12->setGeometry(QRect(30, 220, 241, 20));
         label_13 = new QLabel(centralwidget);
         label_13->setObjectName(QString::fromUtf8("label_13"));
         label_13->setGeometry(QRect(520, 70, 71, 16));
@@ -218,14 +218,14 @@ public:
         label->setGeometry(QRect(510, 440, 221, 16));
         scrollArea = new QScrollArea(centralwidget);
         scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
-        scrollArea->setGeometry(QRect(30, 180, 211, 85));
+        scrollArea->setGeometry(QRect(30, 250, 211, 85));
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 209, 83));
         label_9 = new QLabel(scrollAreaWidgetContents);
         label_9->setObjectName(QString::fromUtf8("label_9"));
-        label_9->setGeometry(QRect(10, 0, 141, 81));
+        label_9->setGeometry(QRect(0, 0, 201, 81));
         scrollArea->setWidget(scrollAreaWidgetContents);
         Payment->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Payment);
@@ -274,7 +274,7 @@ public:
         CVVlabel->setText(QCoreApplication::translate("Payment", "CVV", nullptr));
         CashPromptLabel->setText(QCoreApplication::translate("Payment", "Please pay at the reception", nullptr));
         label->setText(QCoreApplication::translate("Payment", "PLease get insurance approval", nullptr));
-        label_9->setText(QCoreApplication::translate("Payment", "details2", nullptr));
+        label_9->setText(QCoreApplication::translate("Payment", "detail1", nullptr));
     } // retranslateUi
 
 };

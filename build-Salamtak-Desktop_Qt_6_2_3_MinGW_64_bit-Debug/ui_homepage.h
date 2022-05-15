@@ -43,7 +43,7 @@ public:
     QLabel *label;
     QSpacerItem *verticalSpacer_3;
     QGridLayout *gridLayout_5;
-    QPushButton *pushButton_9;
+    QPushButton *LabButton;
     QPushButton *pushButton_6;
     QPushButton *ReserveRoomButton;
     QPushButton *pushButton_2;
@@ -55,7 +55,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer_7;
     QPushButton *pushButton_7;
-    QPushButton *pushButton;
+    QPushButton *PayforAssignedMedButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -149,12 +149,12 @@ public:
 
         gridLayout_5 = new QGridLayout();
         gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
-        pushButton_9 = new QPushButton(centralwidget);
-        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
-        pushButton_9->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_9->setFlat(false);
+        LabButton = new QPushButton(centralwidget);
+        LabButton->setObjectName(QString::fromUtf8("LabButton"));
+        LabButton->setCursor(QCursor(Qt::PointingHandCursor));
+        LabButton->setFlat(false);
 
-        gridLayout_5->addWidget(pushButton_9, 2, 0, 1, 1);
+        gridLayout_5->addWidget(LabButton, 2, 0, 1, 1);
 
         pushButton_6 = new QPushButton(centralwidget);
         pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
@@ -222,10 +222,10 @@ public:
 
         gridLayout_4->addLayout(horizontalLayout, 9, 6, 1, 1);
 
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        PayforAssignedMedButton = new QPushButton(centralwidget);
+        PayforAssignedMedButton->setObjectName(QString::fromUtf8("PayforAssignedMedButton"));
 
-        gridLayout_4->addWidget(pushButton, 6, 1, 1, 2);
+        gridLayout_4->addWidget(PayforAssignedMedButton, 6, 1, 1, 2);
 
         Homepage->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Homepage);
@@ -253,13 +253,13 @@ public:
         pushButton_5->setText(QCoreApplication::translate("Homepage", "Log out", nullptr));
         pushButton_4->setText(QCoreApplication::translate("Homepage", "My Account", nullptr));
         label->setText(QCoreApplication::translate("Homepage", "Balance: ", nullptr));
-        pushButton_9->setText(QCoreApplication::translate("Homepage", "Reserve Lab", nullptr));
+        LabButton->setText(QCoreApplication::translate("Homepage", "Reserve Lab", nullptr));
         pushButton_6->setText(QCoreApplication::translate("Homepage", "View reservations", nullptr));
         ReserveRoomButton->setText(QCoreApplication::translate("Homepage", "Reserve room", nullptr));
         pushButton_2->setText(QCoreApplication::translate("Homepage", "Reserve clinic appointment", nullptr));
         label_4->setText(QCoreApplication::translate("Homepage", "Reservations", nullptr));
         pushButton_7->setText(QCoreApplication::translate("Homepage", "Contact us", nullptr));
-        pushButton->setText(QCoreApplication::translate("Homepage", "Pay for assigned Medicine", nullptr));
+        PayforAssignedMedButton->setText(QCoreApplication::translate("Homepage", "Pay for assigned Medicine", nullptr));
     } // retranslateUi
 
 };

@@ -1,6 +1,6 @@
 #include "salamtak.h"
 #include "ui_salamtak.h"
-
+#include "emergency.h"
 
 
 
@@ -40,6 +40,16 @@ void Salamtak::on_RegisterButton_clicked()
     r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
     r->show();
 
+
+}
+
+
+void Salamtak::on_EmergencyButton_clicked()
+{
+    hide();
+    Emergency* r = new Emergency();
+    r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
+    r->show();
 
 }
 

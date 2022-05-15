@@ -75,7 +75,7 @@ public:
     {
         if (Registeration->objectName().isEmpty())
             Registeration->setObjectName(QString::fromUtf8("Registeration"));
-        Registeration->resize(1176, 600);
+        Registeration->resize(1176, 657);
         centralwidget = new QWidget(Registeration);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         label = new QLabel(centralwidget);

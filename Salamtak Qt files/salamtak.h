@@ -23,6 +23,8 @@ private slots:
 
     void on_RegisterButton_clicked();
 
+    void on_EmergencyButton_clicked();
+
 private:
     Ui::Salamtak *ui;
 };

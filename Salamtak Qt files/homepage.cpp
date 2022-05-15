@@ -2,6 +2,9 @@
 #include "ui_homepage.h"
 #include "reservation.h"
 #include "registeration.h"
+#include "medpayment.h"
+#include "clinicreserve.h"
+#include "labreserve.h"
 
 Homepage::Homepage(QWidget *parent) :
     QMainWindow(parent),
@@ -32,4 +35,31 @@ void Homepage::on_pushButton_clicked()
     r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
     r->show();
 }
+
+
+void Homepage::on_PayforAssignedMedButton_clicked()
+{
+    hide();
+    MedPayment* r = new MedPayment();
+    r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
+    r->show();
+}
+
+
+void Homepage::on_pushButton_2_clicked()
+{
+    hide();
+    ClinicReserve* r = new ClinicReserve();
+    r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
+    r->show();
+}
+/*
+void Homepage::on_LabButton_clicked()
+{
+    hide();
+    LabReserve* r = new LabReserve();
+    r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
+    r->show();
+}
+*/
 

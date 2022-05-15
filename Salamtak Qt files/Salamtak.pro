@@ -9,25 +9,41 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    clinicreserve.cpp \
+    emergency.cpp \
     homepage.cpp \
+    labreserve.cpp \
     main.cpp \
+    medpayment.cpp \
     payment.cpp \
+    reception.cpp \
     registeration.cpp \
     reservation.cpp \
     salamtak.cpp \
     userprofile.cpp
 
 HEADERS += \
+    Patient.h \
+    clinicreserve.h \
+    emergency.h \
     homepage.h \
+    labreserve.h \
+    medpayment.h \
     payment.h \
+    reception.h \
     registeration.h \
     reservation.h \
     salamtak.h \
     userprofile.h
 
 FORMS += \
+    clinicreserve.ui \
+    emergency.ui \
     homepage.ui \
+    labreserve.ui \
+    medpayment.ui \
     payment.ui \
+    reception.ui \
     registeration.ui \
     reservation.ui \
     salamtak.ui \
