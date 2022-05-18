@@ -15,6 +15,9 @@ public:
     explicit LabReserve(QWidget *parent = nullptr);
     ~LabReserve();
 
+private slots:
+    void on_comboBox_3_activated(int index);
+
 private:
     Ui::LabReserve *ui;
 };

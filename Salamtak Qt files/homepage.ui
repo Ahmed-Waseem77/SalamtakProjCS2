@@ -148,7 +148,7 @@
           </widget>
          </item>
          <item row="0" column="4">
-          <widget class="QPushButton" name="pushButton_4">
+          <widget class="QPushButton" name="myaccount">
            <property name="font">
             <font>
              <bold>true</bold>
@@ -372,7 +372,7 @@
      <x>0</x>
      <y>0</y>
      <width>844</width>
-     <height>25</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

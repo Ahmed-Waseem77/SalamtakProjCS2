@@ -26,6 +26,12 @@ private slots:
 
     //void on_LabButton_clicked();
 
+    void on_myaccount_clicked();
+
+    void on_pushButton_7_clicked();
+
+    void on_LabButton_clicked();
+
 private:
     Ui::Homepage *ui;
 };

@@ -12,3 +12,9 @@ LabReserve::~LabReserve()
 {
     delete ui;
 }
+
+void LabReserve::on_comboBox_3_activated(int index)
+{
+
+}
+

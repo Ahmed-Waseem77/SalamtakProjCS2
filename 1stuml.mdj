@@ -783,12 +783,12 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGAwzp0D+tzk00=",
+											"_id": "AAAAAAGA10HKRIOeygY=",
 											"_parent": {
 												"$ref": "AAAAAAF/k2Srl5XkWjY="
 											},
 											"model": {
-												"$ref": "AAAAAAGAwzpz8+tw+GQ="
+												"$ref": "AAAAAAGA10HKGoOblcY="
 											},
 											"fillColor": "#ffffd8",
 											"font": "Arial;13;0",
@@ -796,7 +796,7 @@
 											"top": 899,
 											"width": 270.6259765625,
 											"height": 13,
-											"text": "-Meds: QVector",
+											"text": "#Pharmacy_item: QVector",
 											"horizontalAlignment": 0
 										}
 									],
@@ -5213,7 +5213,7 @@
 											"top": 950,
 											"width": 167,
 											"height": 13,
-											"text": "-blood_type: int",
+											"text": "-blood_type: string",
 											"horizontalAlignment": 0
 										},
 										{
@@ -7251,7 +7251,7 @@
 											"top": 582,
 											"width": 125.3662109375,
 											"height": 13,
-											"text": "+doctorToMeet: string",
+											"text": "-doctorToMeet: string",
 											"horizontalAlignment": 0
 										},
 										{
@@ -7271,6 +7271,25 @@
 											"width": 125.3662109375,
 											"height": 13,
 											"text": "+Attribute1",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGA1zOdy5tcRnI=",
+											"_parent": {
+												"$ref": "AAAAAAF/og4KlQWaUk4="
+											},
+											"model": {
+												"$ref": "AAAAAAGA1zOdi5tH5PU="
+											},
+											"visible": false,
+											"fillColor": "#ffffd8",
+											"font": "Arial;13;0",
+											"left": 1749,
+											"top": 597,
+											"width": 125.3662109375,
+											"height": 13,
+											"text": "+Meds: QVector",
 											"horizontalAlignment": 0
 										}
 									],
@@ -7533,6 +7552,25 @@
 											"height": 13,
 											"text": "-IsRoomApproved: bool",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGA1zQcd6pMH/g=",
+											"_parent": {
+												"$ref": "AAAAAAF/og4t2wc+IbM="
+											},
+											"model": {
+												"$ref": "AAAAAAGA1zQcY6o3+OA="
+											},
+											"visible": false,
+											"fillColor": "#ffffd8",
+											"font": "Arial;13;0",
+											"left": 1621,
+											"top": 739,
+											"width": 139.83251953125,
+											"height": 13,
+											"text": "+Meds: QVector",
+											"horizontalAlignment": 0
 										}
 									],
 									"fillColor": "#ffffd8",
@@ -7599,7 +7637,7 @@
 							"left": 1616,
 							"top": 664,
 							"width": 149.83251953125,
-							"height": 96,
+							"height": 103,
 							"nameCompartment": {
 								"$ref": "AAAAAAF/og4t2wc5/8k="
 							},
@@ -11663,8 +11701,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1779,
-									"top": 774,
+									"left": 1780,
+									"top": 778,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -11684,8 +11722,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 1790,
-									"top": 764,
+									"left": 1791,
+									"top": 767,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -11705,8 +11743,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1758,
-									"top": 795,
+									"left": 1759,
+									"top": 799,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -11724,7 +11762,7 @@
 								"$ref": "AAAAAAF/og4t2wc4bGs="
 							},
 							"lineStyle": 1,
-							"points": "1738:760;1800:823",
+							"points": "1742:767;1798:823",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF/qN+iNH+beyE="
@@ -27989,6 +28027,285 @@
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAGAVpvszbi3d80="
 							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAGA10ryjBGNXrM=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAGA10ryixGLjZc="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAGA10ryjBGOumw=",
+									"_parent": {
+										"$ref": "AAAAAAGA10ryjBGNXrM="
+									},
+									"model": {
+										"$ref": "AAAAAAGA10ryixGLjZc="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGA10ryjBGP0w8=",
+											"_parent": {
+												"$ref": "AAAAAAGA10ryjBGOumw="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGA10ryjBGQ8RA=",
+											"_parent": {
+												"$ref": "AAAAAAGA10ryjBGOumw="
+											},
+											"font": "Arial;13;1",
+											"left": 2093,
+											"top": 399,
+											"width": 161.509765625,
+											"height": 13,
+											"text": "Quantity_in_pharmacy"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGA10ryjBGRpTs=",
+											"_parent": {
+												"$ref": "AAAAAAGA10ryjBGOumw="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGA10ryjBGSx0Q=",
+											"_parent": {
+												"$ref": "AAAAAAGA10ryjBGOumw="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 2088,
+									"top": 392,
+									"width": 171.509765625,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAGA10ryjBGP0w8="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAGA10ryjBGQ8RA="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAGA10ryjBGRpTs="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAGA10ryjBGSx0Q="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAGA10ryjBGTdhc=",
+									"_parent": {
+										"$ref": "AAAAAAGA10ryjBGNXrM="
+									},
+									"model": {
+										"$ref": "AAAAAAGA10ryixGLjZc="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGA10uxSyVu7YA=",
+											"_parent": {
+												"$ref": "AAAAAAGA10ryjBGTdhc="
+											},
+											"model": {
+												"$ref": "AAAAAAGA10uxJCTM4PQ="
+											},
+											"font": "Arial;13;0",
+											"left": 2093,
+											"top": 422,
+											"width": 161.509765625,
+											"height": 13,
+											"text": "-quantity_inpharm: QVector",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 2088,
+									"top": 417,
+									"width": 171.509765625,
+									"height": 23
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAGA10ryjBGUfVk=",
+									"_parent": {
+										"$ref": "AAAAAAGA10ryjBGNXrM="
+									},
+									"model": {
+										"$ref": "AAAAAAGA10ryixGLjZc="
+									},
+									"font": "Arial;13;0",
+									"left": 2088,
+									"top": 440,
+									"width": 171.509765625,
+									"height": 10
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGA10ryjBGVXg4=",
+									"_parent": {
+										"$ref": "AAAAAAGA10ryjBGNXrM="
+									},
+									"model": {
+										"$ref": "AAAAAAGA10ryixGLjZc="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAGA10ryjBGW2ak=",
+									"_parent": {
+										"$ref": "AAAAAAGA10ryjBGNXrM="
+									},
+									"model": {
+										"$ref": "AAAAAAGA10ryixGLjZc="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 2088,
+							"top": 392,
+							"width": 171.509765625,
+							"height": 96,
+							"nameCompartment": {
+								"$ref": "AAAAAAGA10ryjBGOumw="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAGA10ryjBGTdhc="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAGA10ryjBGUfVk="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGA10ryjBGVXg4="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAGA10ryjBGW2ak="
+							}
+						},
+						{
+							"_type": "UMLGeneralizationView",
+							"_id": "AAAAAAGA18dYtcZWJp8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAGA18dYtMZUuEY="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA18dYtcZXjCU=",
+									"_parent": {
+										"$ref": "AAAAAAGA18dYtcZWJp8="
+									},
+									"model": {
+										"$ref": "AAAAAAGA18dYtMZUuEY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 2081,
+									"top": 483,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGA18dYtcZWJp8="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA18dYtcZYl3M=",
+									"_parent": {
+										"$ref": "AAAAAAGA18dYtcZWJp8="
+									},
+									"model": {
+										"$ref": "AAAAAAGA18dYtMZUuEY="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 2086,
+									"top": 497,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGA18dYtcZWJp8="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA18dYtcZZ6IM=",
+									"_parent": {
+										"$ref": "AAAAAAGA18dYtcZWJp8="
+									},
+									"model": {
+										"$ref": "AAAAAAGA18dYtMZUuEY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 2070,
+									"top": 454,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGA18dYtcZWJp8="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAF/t/rAP3ZbOWM="
+							},
+							"tail": {
+								"$ref": "AAAAAAGA10ryjBGNXrM="
+							},
+							"lineStyle": 1,
+							"points": "2087:471;2065:479",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAGA18dYtcZXjCU="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGA18dYtcZYl3M="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGA18dYtcZZ6IM="
+							}
 						}
 					]
 				},
@@ -28935,12 +29252,12 @@
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAGAwzpz8+tw+GQ=",
+							"_id": "AAAAAAGA10HKGoOblcY=",
 							"_parent": {
 								"$ref": "AAAAAAF/k2SrlpXcOsQ="
 							},
-							"name": "Meds",
-							"visibility": "private",
+							"name": "Pharmacy_item",
+							"visibility": "protected",
 							"type": "QVector"
 						}
 					],
@@ -31533,7 +31850,7 @@
 							},
 							"name": "blood_type",
 							"visibility": "private",
-							"type": "int"
+							"type": "string"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -31886,6 +32203,7 @@
 								"$ref": "AAAAAAF/og4KlAWSFlQ="
 							},
 							"name": "doctorToMeet",
+							"visibility": "private",
 							"type": "string"
 						},
 						{
@@ -31896,6 +32214,15 @@
 							},
 							"name": "Attribute1",
 							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGA1zOdi5tH5PU=",
+							"_parent": {
+								"$ref": "AAAAAAF/og4KlAWSFlQ="
+							},
+							"name": "Meds",
+							"type": "QVector"
 						}
 					]
 				},
@@ -31961,6 +32288,15 @@
 							"name": "IsRoomApproved",
 							"visibility": "private",
 							"type": "bool"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGA1zQcY6o3+OA=",
+							"_parent": {
+								"$ref": "AAAAAAF/og4t2wc2SzE="
+							},
+							"name": "Meds",
+							"type": "QVector"
 						}
 					]
 				},
@@ -34487,6 +34823,82 @@
 								"$ref": "AAAAAAGAVo4sSo4NfNs="
 							},
 							"name": "DisplayPoints"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGA10ryixGLjZc=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Quantity_in_pharmacy",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGA10tyEBiKDu0=",
+							"_parent": {
+								"$ref": "AAAAAAGA10ryixGLjZc="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGA10tyEBiLgFc=",
+								"_parent": {
+									"$ref": "AAAAAAGA10tyEBiKDu0="
+								},
+								"reference": {
+									"$ref": "AAAAAAGA10ryixGLjZc="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGA10tyEBiMTEQ=",
+								"_parent": {
+									"$ref": "AAAAAAGA10tyEBiKDu0="
+								},
+								"reference": {
+									"$ref": "AAAAAAF/k2S+NJYFFuI="
+								},
+								"aggregation": "composite"
+							}
+						},
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAGA10uVfx/DUDc=",
+							"_parent": {
+								"$ref": "AAAAAAGA10ryixGLjZc="
+							},
+							"source": {
+								"$ref": "AAAAAAGA10ryixGLjZc="
+							},
+							"target": {
+								"$ref": "AAAAAAF/k2S+NJYFFuI="
+							}
+						},
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAGA18dYtMZUuEY=",
+							"_parent": {
+								"$ref": "AAAAAAGA10ryixGLjZc="
+							},
+							"source": {
+								"$ref": "AAAAAAGA10ryixGLjZc="
+							},
+							"target": {
+								"$ref": "AAAAAAF/t/rAPnZZFx8="
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGA10uxJCTM4PQ=",
+							"_parent": {
+								"$ref": "AAAAAAGA10ryixGLjZc="
+							},
+							"name": "quantity_inpharm",
+							"visibility": "private",
+							"type": "QVector"
 						}
 					]
 				}

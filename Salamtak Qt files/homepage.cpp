@@ -5,6 +5,9 @@
 #include "medpayment.h"
 #include "clinicreserve.h"
 #include "labreserve.h"
+#include "userprofile.h"
+#include "contactus.h"
+#include "labreserve.h"
 
 Homepage::Homepage(QWidget *parent) :
     QMainWindow(parent),
@@ -59,7 +62,31 @@ void Homepage::on_LabButton_clicked()
     hide();
     LabReserve* r = new LabReserve();
     r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
+    r->sh
+*/
+void Homepage::on_myaccount_clicked()
+{
+    hide();
+    UserProfile* r = new UserProfile();
+    r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
     r->show();
 }
-*/
+
+
+void Homepage::on_pushButton_7_clicked()
+{
+    hide();
+    ContactUs* r = new ContactUs();
+    r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
+    r->show();
+}
+
+
+void Homepage::on_LabButton_clicked()
+{
+    hide();
+    LabReserve* r = new LabReserve();
+    r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
+    r->show();
+}
 
