@@ -8,10 +8,12 @@
 Account::Account(){
     Points = 0;
     isSettled = true;
+    lastPaidAmount = 0;
 }
 Account::Account(float OP, int P){
     outstandingPay = OP;
     Points = P;
+    lastPaidAmount = 0;
 }
 bool Account::choosePayment(QString paymentMethod, float outstandingPay){
     if(paymentMethod == "E-Wallet")
@@ -19,7 +21,7 @@ bool Account::choosePayment(QString paymentMethod, float outstandingPay){
     else
         return patientCreditCard.Pay(outstandingPay);
 }
-void Account::setOustandingPay(float OP){
+void Account::setOutstandingPay(float OP){
     outstandingPay = OP;
 }
 float Account::getWalletBalance(){
@@ -46,6 +48,13 @@ bool Account::redeemPoints(){
 int Account::getPoints(){
     return Points;
 }
+float Account::getLastPaidAmount(){
+    return lastPaidAmount;
+}
+void Account::setLastPaidAmount(float LPA){
+    lastPaidAmount = LPA;
+}
+
 // WALLET FUNCTION IMPLEMENTATIONS
 Wallet::Wallet(){
     Balance = 0;
@@ -67,6 +76,7 @@ bool Wallet::Pay(float amount){
         return true;
     }
 }
+
 // CASH FUNCTION IMPLEMENTATIONS
 bool Cash::Pay(float amount){
     return true;
@@ -85,4 +95,9 @@ Credit::Credit(int CCNo, QString CCName, tm ED, int CVV){
 }
 bool Credit::Pay(float amount){
     return true;
+}
+
+// ACCOUNTANT CLASS IMPLEMENTATIONS
+void Accountant::settleAccount(Account &accToSettle){
+    accToSettle.setOutstandingPay(0);
 }

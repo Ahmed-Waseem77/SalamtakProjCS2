@@ -15,7 +15,6 @@ class Credit : public PaymentAccount{
     QString creditCardName;
     tm expiryDate;
     int creditCVV;
-
 public:
     Credit();
     Credit(int CCNo, QString CCName, tm ED, int CVV);
@@ -45,6 +44,7 @@ class Account{
     Credit patientCreditCard;
     Wallet patientWallet;
     Cash patientCash;
+    float lastPaidAmount;
 public:
     Account();
     Account(float OP, int P);
@@ -52,9 +52,17 @@ public:
     bool choosePayment(QString paymentMethod, float outstandingPay);
     float getOutstandingPay();
     float getWalletBalance();
-    void setOustandingPay(float OP);
+    void setOutstandingPay(float OP);
     void setWalletBalance(float B);
     int getPoints();
+    void setLastPaidAmount(float LPA);
+    float getLastPaidAmount();
+};
+
+// ACCOUNTANT CLASS:
+class Accountant{
+public:
+    void settleAccount(Account &accToSettle);
 };
 
 #endif // PAYMENTACCOUNT_H

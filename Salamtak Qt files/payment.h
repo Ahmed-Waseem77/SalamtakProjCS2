@@ -2,6 +2,8 @@
 #define PAYMENT_H
 
 #include <QMainWindow>
+#include "paymentaccount.h"
+#include "invoice.h"
 
 namespace Ui {
 class Payment;

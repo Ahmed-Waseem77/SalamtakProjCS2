@@ -1,16 +1,16 @@
 #include "payment.h"
 #include "ui_payment.h"
-#include "paymentaccount.h"
 
 Account tmp(920.5, 5000);
+//CurrentData CR;
 
 Payment::Payment(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Payment)
 {
     ui->setupUi(this);
-
-    tmp.setOustandingPay(1300);
+    //tmp2.setOustandingPay(7000);
+    tmp.setOutstandingPay(1300);
     ui->outstandingPayLabel->setText(QString::number(tmp.getOutstandingPay()) + " LE");
     tmp.setWalletBalance(900);
 
@@ -28,9 +28,12 @@ Payment::Payment(QWidget *parent) :
     ui->cardNumberError->hide();
     ui->CVVError->hide();
 
+
     ui->CashPromptLabel->hide();
     ui->messageToUser->hide();
     ui->redeemPointsMessage->hide();
+    ui->paymentSuccessfulLabel->hide();
+
 
     ui->PayButton->hide();
 
@@ -70,6 +73,7 @@ void Payment::on_paymentMethodCombo_activated(int index)
         ui->CashPromptLabel->hide();
 
         ui->messageToUser->hide();
+        ui->paymentSuccessfulLabel->hide();
 
         ui->BalanceLabel->show();
         ui->balanceToDisplay->setText(QString::number(tmp.getWalletBalance())+" LE");
@@ -90,6 +94,7 @@ void Payment::on_paymentMethodCombo_activated(int index)
         ui->balanceToDisplay->hide();
 
         ui->messageToUser->hide();
+        ui->paymentSuccessfulLabel->hide();
 
         ui->PayButton->show();
 
@@ -108,6 +113,7 @@ void Payment::on_paymentMethodCombo_activated(int index)
         ui->PayButton->hide();
 
         ui->messageToUser->hide();
+        ui->paymentSuccessfulLabel->hide();
 
         ui->CashPromptLabel->setText("Please pay at the nearest reception.");
         ui->CashPromptLabel->show();
@@ -129,6 +135,7 @@ void Payment::on_paymentMethodCombo_activated(int index)
         ui->PayButton->show();
 
         ui->messageToUser->hide();
+        ui->paymentSuccessfulLabel->hide();
 
     }
 }
@@ -136,12 +143,12 @@ void Payment::on_paymentMethodCombo_activated(int index)
 
 void Payment::on_PayButton_clicked()
 {
+    tmp.setLastPaidAmount(tmp.getOutstandingPay());
     QString comboText = ui->paymentMethodCombo->currentText();
     if(comboText == "E-Wallet"){
         bool IsSuccessful = tmp.choosePayment("E-Wallet", tmp.getOutstandingPay());
         if(IsSuccessful){
-            ui->messageToUser->setText("Payment successful.");
-            tmp.setOustandingPay(0);
+            tmp.setOutstandingPay(0);
             ui->balanceToDisplay->setText(QString::number(tmp.getWalletBalance()));
             ui->outstandingPayLabel->setText(QString::number(tmp.getOutstandingPay()) + " LE");
 
@@ -149,18 +156,20 @@ void Payment::on_PayButton_clicked()
             ui->discountAmount->hide();
             ui->outstandingAfterDiscountLabel->hide();
             ui->outstandingAfterDiscountAmount->hide();
+            ui->paymentSuccessfulLabel->show();
+            invoice* r = new invoice();
+            r->setWindowIcon(QIcon("../Resources/SalLogo.png"));
+            r->show();
         }
         else{
             ui->messageToUser->setText("Your wallet balance is less than the outstanding pay.\nPlease select another payment method. You will be\ngiven the option of getting your current wallet\nbalance (if there is) discounted.");
+            ui->messageToUser->show();
         }
-        ui->messageToUser->show();
     }
     else if (comboText == "Insurance"){
         // Ahmed this is the case for paying by insurance
         // the dr said that we only check if this customer is insured or not, which is something he decides when he registers (ig we can let him edit that in the account maybe)
-            ui->messageToUser->setText("Payment successful.");
-            ui->messageToUser->show();
-            tmp.setOustandingPay(0);
+            tmp.setOutstandingPay(0);
             ui->outstandingPayLabel->setText(QString::number(tmp.getOutstandingPay()) + " LE");
 
 
@@ -182,15 +191,14 @@ void Payment::on_PayButton_clicked()
         else{
             bool IsSuccessful3 = tmp.choosePayment("Credit", tmp.getOutstandingPay());
             if(IsSuccessful3){
-                ui->messageToUser->setText("Payment successful.");
-                ui->messageToUser->show();
-                tmp.setOustandingPay(0);
+                tmp.setOutstandingPay(0);
                 ui->outstandingPayLabel->setText(QString::number(tmp.getOutstandingPay()) + " LE");
 
                 ui->WalletDiscountLabel->hide();
                 ui->discountAmount->hide();
                 ui->outstandingAfterDiscountLabel->hide();
                 ui->outstandingAfterDiscountAmount->hide();
+                ui->paymentSuccessfulLabel->show();
             }
         }
 
@@ -210,6 +218,7 @@ void Payment::on_redeemPointsButton_clicked()
         ui->outstandingAfterDiscountAmount->setText(QString::number(discountedOP));
         ui->balanceToDisplay->setText(QString::number(tmp.getWalletBalance())+" LE");
         ui->messageToUser->hide();
+        tmp.setOutstandingPay(discountedOP);
     }
     else
         ui->redeemPointsMessage->setText("Not enough points to redeem.\n(Must have minimum of 1000)");

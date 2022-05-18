@@ -10,8 +10,10 @@ CONFIG += c++11
 
 SOURCES += \
     clinicreserve.cpp \
+    currentdata.cpp \
     emergency.cpp \
     homepage.cpp \
+    invoice.cpp \
     labreserve.cpp \
     main.cpp \
     medpayment.cpp \
@@ -27,8 +29,10 @@ SOURCES += \
 HEADERS += \
     Patient.h \
     clinicreserve.h \
+    currentdata.h \
     emergency.h \
     homepage.h \
+    invoice.h \
     labreserve.h \
     medpayment.h \
     payment.h \
@@ -44,6 +48,7 @@ FORMS += \
     clinicreserve.ui \
     emergency.ui \
     homepage.ui \
+    invoice.ui \
     labreserve.ui \
     medpayment.ui \
     payment.ui \
