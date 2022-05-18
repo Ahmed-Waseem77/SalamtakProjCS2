@@ -146,7 +146,7 @@
      <string>Payment method</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QComboBox" name="paymentMethodCombo">
     <property name="geometry">
      <rect>
       <x>664</x>
@@ -181,12 +181,12 @@
      <rect>
       <x>510</x>
       <y>200</y>
-      <width>71</width>
+      <width>51</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Balance</string>
+     <string>Balance:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -194,7 +194,7 @@
      <rect>
       <x>30</x>
       <y>410</y>
-      <width>201</width>
+      <width>101</width>
       <height>20</height>
      </rect>
     </property>
@@ -264,13 +264,13 @@
      </rect>
     </property>
     <property name="text">
-     <string>points:</string>
+     <string>Points:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="redeemPointsButton">
     <property name="geometry">
      <rect>
-      <x>580</x>
+      <x>590</x>
       <y>70</y>
       <width>111</width>
       <height>25</height>
@@ -283,8 +283,8 @@
    <widget class="QPushButton" name="PayButton">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>410</y>
+      <x>680</x>
+      <y>390</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -297,7 +297,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>260</y>
+      <y>200</y>
       <width>203</width>
       <height>136</height>
      </rect>
@@ -349,8 +349,8 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>230</y>
-      <width>191</width>
+      <y>200</y>
+      <width>231</width>
       <height>20</height>
      </rect>
     </property>
@@ -358,13 +358,13 @@
      <string>Please pay at the reception</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="messageToUser">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>440</y>
-      <width>221</width>
-      <height>16</height>
+      <x>480</x>
+      <y>420</y>
+      <width>301</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
@@ -407,6 +407,136 @@
      </widget>
     </widget>
    </widget>
+   <widget class="QLabel" name="outstandingPayLabel">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>410</y>
+      <width>49</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>800</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="balanceToDisplay">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>200</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CVVError">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>270</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cardNumberError">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>220</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="redeemPointsMessage">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>100</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="points">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>70</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WalletDiscountLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>390</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>E_Wallet discount: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="discountAmount">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>390</y>
+      <width>49</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>800</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outstandingAfterDiscountLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>430</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Outstanding pay after discount: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outstandingAfterDiscountAmount">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>430</y>
+      <width>49</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>800</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -414,7 +544,7 @@
      <x>0</x>
      <y>0</y>
      <width>820</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

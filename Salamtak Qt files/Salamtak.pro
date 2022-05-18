@@ -16,6 +16,8 @@ SOURCES += \
     main.cpp \
     medpayment.cpp \
     payment.cpp \
+    paymentaccount.cpp \
+    pharmacy.cpp \
     reception.cpp \
     registeration.cpp \
     reservation.cpp \
@@ -30,6 +32,8 @@ HEADERS += \
     labreserve.h \
     medpayment.h \
     payment.h \
+    paymentaccount.h \
+    pharmacy.h \
     reception.h \
     registeration.h \
     reservation.h \
